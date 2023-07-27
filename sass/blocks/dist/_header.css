@@ -1,0 +1,88 @@
+.header {
+  position: relative;
+  height: 50px;
+}
+.header__menu {
+  position: fixed;
+  padding-top: 17px;
+  list-style-type: none;
+  width: 100%;
+  height: 50px;
+  background-color: #212121;
+  z-index: 5;
+}
+.header__list {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 0px;
+}
+.header__item {
+  margin: 0 7px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s all;
+  list-style-type: none;
+}
+.header__item:hover {
+  box-shadow: 3px 3px 20px #806b6b;
+  border: none;
+}
+.header__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  border-right: #806b6b solid;
+  border-bottom: #806b6b solid;
+  padding-right: 20px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+}
+.header__subheader {
+  position: absolute;
+  padding: 11px;
+  top: 54px;
+  width: 100%;
+  height: 157px;
+  background-color: rgba(40, 50, 60, 0.6);
+  border-top: #d3d606 solid;
+}
+.header__contacts__phone {
+  color: #fff;
+}
+.header__phone {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 39px;
+}
+.header__wrapper-mini {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  display: block;
+  text-align: center;
+}
+.header__logo-ling {
+  display: block;
+  width: 90px;
+  margin: 0 auto;
+  margin-top: 1px;
+}
+.header__logo-ling img {
+  width: 100%;
+  border-radius: 10px;
+}
+.header__descr {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  margin-top: 7px;
+}

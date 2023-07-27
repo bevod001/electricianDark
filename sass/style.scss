@@ -1,0 +1,21 @@
+.container {
+    position: relative;
+    max-width: 950px;
+    margin: 0 auto;
+
+    &__fluid {
+        max-width: 1250px;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/light';
+@import 'blocks/button';
+@import 'base/animations';
+

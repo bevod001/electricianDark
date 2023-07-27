@@ -1,0 +1,77 @@
+.light {
+  position: relative;
+  
+  .vesametun {
+    position: absolute;
+    font-size: 14px;
+    right: 6px;
+    top: 5px;
+    width: 5em;
+    height: 8em;
+    margin: 0;
+    filter: opacity(0);
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .vesametun~.donetugo {
+    // position: absolute;
+    // top: 320px;
+    // left: 94px;
+    width: 5em;
+    height: 8em;
+    background: linear-gradient(#bbbec1, #fffefe);
+    border-radius: 1.2em;
+    box-shadow: inset 0 -0.2em 0.4em rgba(197, 193, 193, 0.75), inset 0 -0.8em 0 0.1em rgba(169, 166, 166, 0.85), 0 0 0 0.1em rgba(105, 102, 102, 0.8), 0 0.6em 0.6em rgba(31, 30, 30, 0.3), 0 0 0 0.4em #caced0;
+  }
+
+  .vesametun~.donetugo::before,
+  .vesametun~.donetugo::after {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4em;
+    font-family: sans-serif;
+  }
+
+  .vesametun~.donetugo::before {
+    content: '|';
+    bottom: 1em;
+    color: rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0.1em 0 rgba(255, 255, 255, 0.8);
+  }
+
+  .vesametun~.donetugo::after {
+    content: 'O';
+    top: 0.6em;
+    color: rgba(0, 0, 0, 0.45);
+    text-shadow: 0 0.1em 0 rgba(255, 255, 255, 0.4);
+  }
+
+  .vesametun:checked~.donetugo {
+    background: linear-gradient(#87898c, #f5f2f2);
+    box-shadow: inset 0 0.2em 0.4em rgba(197, 192, 192, 0.75), inset 0 0.8em 0 0.1em rgba(236, 231, 231, 0.77), 0 0 0 0.1em rgba(103, 101, 101, 0.8), 0 -0.2em 0.2em rgba(27, 26, 26, 0.18), 0 0 0 0.4em #d0d0d0;
+  }
+
+  .vesametun:checked~.donetugo::before {
+    bottom: 0.3em;
+    text-shadow: 0 0.1em 0 rgba(255, 255, 255, 0.5);
+  }
+
+  .vesametun:checked~.donetugo::after {
+    top: 1.2em;
+    text-shadow: 0 0.1em 0 rgba(255, 255, 255, 0.15);
+  }
+
+  .vesametun~.branpodes {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0a0a16;
+    z-index: 1;
+    filter: opacity(0.7);
+  }
+
+  .vesametun:checked~.branpodes {
+    filter: opacity(0);
+  }
+}
