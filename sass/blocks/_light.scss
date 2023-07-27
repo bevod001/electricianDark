@@ -1,6 +1,11 @@
 .light {
   position: relative;
-  
+  &__descr {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+  }
   .vesametun {
     position: absolute;
     font-size: 14px;
@@ -36,7 +41,7 @@
 
   .vesametun~.donetugo::before {
     content: '|';
-    bottom: 1em;
+    bottom: 2em;
     color: rgba(0, 0, 0, 0.5);
     text-shadow: 0 0.1em 0 rgba(255, 255, 255, 0.8);
   }
@@ -54,7 +59,7 @@
   }
 
   .vesametun:checked~.donetugo::before {
-    bottom: 0.3em;
+    bottom: 1.2999999999999998em;
     text-shadow: 0 0.1em 0 rgba(255, 255, 255, 0.5);
   }
 

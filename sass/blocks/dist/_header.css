@@ -59,7 +59,7 @@
   font-weight: 700;
   color: #fff;
   text-decoration: none;
-  margin-top: 39px;
+  margin-top: 23px;
 }
 .header__wrapper-mini {
   display: flex;
@@ -74,7 +74,7 @@
   display: block;
   width: 90px;
   margin: 0 auto;
-  margin-top: 1px;
+  margin-top: -38px;
 }
 .header__logo-ling img {
   width: 100%;
@@ -84,5 +84,8 @@
   color: #fff;
   display: block;
   font-size: 20px;
-  margin-top: 7px;
+  margin-top: 12px;
+}
+.header__button {
+  margin-top: -38px;
 }
