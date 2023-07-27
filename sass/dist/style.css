@@ -1,0 +1,193 @@
+.container {
+  position: relative;
+  max-width: 950px;
+  margin: 0 auto;
+}
+.container__fluid {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.header {
+  position: relative;
+  height: 50px;
+}
+.header__menu {
+  position: fixed;
+  padding-top: 12px;
+  list-style-type: none;
+  width: 100%;
+  height: 50px;
+  background-color: #212121;
+  z-index: 5;
+}
+.header__list {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 0px;
+}
+.header__item {
+  margin: 0 7px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s all;
+  list-style-type: none;
+}
+.header__item:hover {
+  box-shadow: 3px 3px 20px #806b6b;
+  border: none;
+}
+.header__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  border-right: #806b6b solid;
+  border-bottom: #806b6b solid;
+  padding-right: 20px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+}
+.header__subheader {
+  position: absolute;
+  top: 52px;
+  width: 100%;
+  height: 120px;
+  background-color: rgba(40, 50, 60, 0.6);
+  border-top: #d3d606 solid;
+}
+.header__contacts__phone {
+  color: #fff;
+}
+.header__phone {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+.header__wrapper-mini {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header__logo {
+  display: block;
+  text-align: center;
+}
+.header__logo-ling {
+  display: block;
+  width: 90px;
+  margin: 0 auto;
+  margin-top: 1px;
+}
+.header__logo-ling img {
+  width: 100%;
+  border-radius: 10px;
+}
+.header__descr {
+  color: #fff;
+  display: block;
+}
+
+.promo {
+  min-height: 900px;
+  padding-bottom: 93px;
+  background: url(../img/promo.jpg) center center/cover no-repeat;
+}
+
+.light {
+  position: relative;
+}
+.light .vesametun {
+  position: absolute;
+  font-size: 14px;
+  top: 325px;
+  left: 100px;
+  width: 5em;
+  height: 8em;
+  margin: 0;
+  filter: opacity(0);
+  cursor: pointer;
+  z-index: 2;
+}
+.light .vesametun ~ .donetugo {
+  position: absolute;
+  top: 320px;
+  left: 94px;
+  width: 5em;
+  height: 8em;
+  background: linear-gradient(#bbbec1, #fffefe);
+  border-radius: 1.2em;
+  box-shadow: inset 0 -0.2em 0.4em rgba(197, 193, 193, 0.75), inset 0 -0.8em 0 0.1em rgba(169, 166, 166, 0.85), 0 0 0 0.1em rgba(105, 102, 102, 0.8), 0 0.6em 0.6em rgba(31, 30, 30, 0.3), 0 0 0 0.4em #caced0;
+}
+.light .vesametun ~ .donetugo::before,
+.light .vesametun ~ .donetugo::after {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 1.4em;
+  font-family: sans-serif;
+}
+.light .vesametun ~ .donetugo::before {
+  content: "|";
+  bottom: 1em;
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0.1em 0 rgba(255, 255, 255, 0.8);
+}
+.light .vesametun ~ .donetugo::after {
+  content: "O";
+  top: 0.6em;
+  color: rgba(0, 0, 0, 0.45);
+  text-shadow: 0 0.1em 0 rgba(255, 255, 255, 0.4);
+}
+.light .vesametun:checked ~ .donetugo {
+  background: linear-gradient(#87898c, #f5f2f2);
+  box-shadow: inset 0 0.2em 0.4em rgba(197, 192, 192, 0.75), inset 0 0.8em 0 0.1em rgba(236, 231, 231, 0.77), 0 0 0 0.1em rgba(103, 101, 101, 0.8), 0 -0.2em 0.2em rgba(27, 26, 26, 0.18), 0 0 0 0.4em #d0d0d0;
+}
+.light .vesametun:checked ~ .donetugo::before {
+  bottom: 0.3em;
+  text-shadow: 0 0.1em 0 rgba(255, 255, 255, 0.5);
+}
+.light .vesametun:checked ~ .donetugo::after {
+  top: 1.2em;
+  text-shadow: 0 0.1em 0 rgba(255, 255, 255, 0.15);
+}
+.light .vesametun ~ .branpodes {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0a0a16;
+  z-index: 1;
+  filter: opacity(0.7);
+}
+.light .vesametun:checked ~ .branpodes {
+  filter: opacity(0);
+}
+
+.button {
+  width: 150px;
+  height: 40px;
+  background-color: #d3d606;
+  border-radius: 5px;
+  border: none;
+  font-size: 12px;
+  line-height: 5px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: black;
+}
+
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  to {
+    transform: scale(1);
+  }
+}
