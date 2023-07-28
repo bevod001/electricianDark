@@ -3,8 +3,9 @@
     height: 50px;
 
     &__menu {
+        display: none;
         position: fixed;
-        padding-top: 17px;
+        padding-top: 13px;
         list-style-type: none;
         width: 100%;
         height: 50px;
@@ -53,14 +54,15 @@
     &__subheader {
         position: absolute;
         padding: 11px;
-        top: 54px;
+        top: 54px; ///
         width: 100%;
         height: 157px;
-        background-color: rgba(40, 50, 60, .6);
-        border-top: #d3d606 solid;
+        // background-color: black;
+        border-top: none;
     }
 
     &__contacts {
+        display: none;
         &__phone {
             color: #fff
         }
@@ -82,7 +84,7 @@
     }
 
     &__logo {
-        display: block;
+        display: none;
         text-align: center;
     }
 

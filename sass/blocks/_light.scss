@@ -41,7 +41,7 @@
 
   .vesametun~.donetugo::before {
     content: '|';
-    bottom: 2em;
+    bottom: 3em;
     color: rgba(0, 0, 0, 0.5);
     text-shadow: 0 0.1em 0 rgba(255, 255, 255, 0.8);
   }
@@ -59,7 +59,7 @@
   }
 
   .vesametun:checked~.donetugo::before {
-    bottom: 1.2999999999999998em;
+    bottom: 2.3000000000000007em;
     text-shadow: 0 0.1em 0 rgba(255, 255, 255, 0.5);
   }
 

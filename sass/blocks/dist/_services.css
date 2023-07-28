@@ -1,0 +1,59 @@
+.services {
+  display: none;
+  min-height: 575px;
+  background: url(../img/fone.png) center center/cover no-repeat;
+  padding: 50px 0 50px 0;
+}
+.services .title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.services__list {
+  counter-reset: li;
+  list-style: none;
+  font: 14px "Trebuchet MS", "Lucida Sans";
+  padding: 0;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  margin-top: 60px;
+}
+.services__link {
+  position: relative;
+  display: block;
+  padding: 2px 2px 2px 2px;
+  margin: 0.5em 0 0.5em 2.5em;
+  background: #D3D4DA;
+  color: #444;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  font-size: 20px;
+}
+.services__link:hover {
+  background: #DCDDE1;
+}
+.services__link:hover:after {
+  left: -0.5em;
+  border-left-color: #9097A2;
+}
+.services__link:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -2.5em;
+  top: 50%;
+  margin-top: -1em;
+  background: #9097A2;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+  font-weight: bold;
+}
+.services__link:after {
+  position: absolute;
+  content: "";
+  border: 0.5em solid transparent;
+  left: -1em;
+  top: 50%;
+  margin-top: -0.5em;
+  transition: all 0.3s ease-out;
+}

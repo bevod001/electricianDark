@@ -1,3 +1,8 @@
+
+body{
+    background-color: black;
+}
+
 .container {
     position: relative;
     max-width: 950px;
@@ -18,4 +23,11 @@
 @import 'blocks/light';
 @import 'blocks/button';
 @import 'base/animations';
-
+@import 'blocks/advantages';
+@import 'blocks/consultation';
+@import 'blocks/services';
+@import 'blocks/forms';
+@import 'blocks/carousel';
+@import 'blocks/review';
+@import 'blocks/footer';
+@import 'blocks/modal';

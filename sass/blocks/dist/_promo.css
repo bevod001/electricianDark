@@ -1,19 +1,21 @@
 .promo {
+  display: none;
   min-height: 900px;
   padding-bottom: 93px;
   background: url(../img/main.jpg) center center/cover no-repeat;
 }
 .promo__wrapper {
-  padding-top: 220px;
+  padding-top: 240px;
   width: 650px;
   display: flex;
   flex-direction: column;
 }
 .promo__header {
   color: white;
+  text-transform: uppercase;
 }
 .promo__subheader {
-  margin-top: 70px;
+  margin-top: 52px;
   color: white;
 }
 .promo__text {
@@ -49,6 +51,6 @@
 }
 .promo__descr {
   display: block;
-  width: 100px;
+  width: 165px;
   margin-top: 5px;
 }

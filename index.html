@@ -7,7 +7,7 @@
     <title>Electrical Repair</title>
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
     <link rel="stylesheet" href="css/font.css" />
-    <!-- <link rel="stylesheet" href="css/slick.css" /> -->
+    <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/animate.css" />
     <link
       rel="stylesheet"
@@ -16,28 +16,28 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <nav class="header__menu">
         <div class="container__fluid">
           <div class="header__wrapper">
             <ul class="header__list">
               <li class="header__item">
-                <a href="#" class="header__link">услуги электрика</a>
+                <a href="#header" class="header__link">Главная</a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__link">прайс</a>
+                <a href="#consultation" class="header__link">консультация</a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__link">вызов электрика</a>
+                <a href="#services" class="header__link">услуги</a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__link">калькулятор</a>
+                <a href="#carousel" class="header__link">портфолио</a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__link">портфолио</a>
+                <a href="#review" class="header__link">отзывы</a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__link">контакты</a>
+                <a href="#footer" class="header__link">контакты</a>
               </li>
             </ul>
           </div>
@@ -46,21 +46,22 @@
       <div class="header__subheader">
         <div class="container">
           <div class="header__wrapper-mini">
+            <div class="light">
+              <input type="checkbox" checked="checked" class="vesametun" />
+              <div class="donetugo"></div>
+              <div class="light__descr">Push me!</div>
+            </div>
             <div class="header__logo">
               <a href="#" class="header__logo-ling"
                 ><img src="icons/Logo.png" alt="Lightman"
               /></a>
               <div class="header__descr">Мы зажигаем свет</div>
             </div>
-            <div class="light">
-              <input type="checkbox" checked="checked" class="vesametun" />
-              <div class="donetugo"></div>
-              <div class="light__descr">Push me!</div>
-            </div>
-
             <div class="header__contacts">
               <div class="header__button">
-                <button class="button">Заказать звонок</button>
+                <button data-modal="consultation" class="button">
+                  Заказать звонок
+                </button>
               </div>
               <a href="tel:+375259603172" class="header__phone"
                 >+375(29)960-31-72</a
@@ -70,8 +71,6 @@
         </div>
       </div>
     </header>
-    <!--  -->
-
 
     <section class="promo">
       <div class="container">
@@ -98,18 +97,265 @@
             </div>
             <div class="promo__icon">
               <img src="icons/3.svg" alt="" />
-              <div class="promo__descr">В любое время </div>
+              <div class="promo__descr">В любое время</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <section class="advantages">
+      <div class="container">
+        <div class="advantages__wrapper">
+          <h2 class="title">наши преимущества</h2>
+          <div class="advantages__icons">
+            <div class="advantages__icon">
+              <img src="icons/settings.png" alt="settings" />
+              <div class="advantages__subtitle">
+                Работа только фирменным инструментом
+              </div>
+              <div class="advantages__descr">
+                Используются современные, качественные комплектующие.
+                Применяются передовые технологии и оборудование.
+              </div>
+            </div>
+            <div class="advantages__icon">
+              <img src="icons/processing.png" alt="processing" />
+              <div class="advantages__subtitle">
+                Доставка необходимого материала
+              </div>
+              <div class="advantages__descr">
+                Осуществляется доставка нужных материалов. Работа, как с
+                собственным материалом, так и с предоставленным заказчиком.
+              </div>
+            </div>
+            <div class="advantages__icon">
+              <img src="icons/cleaning.png" alt="cleaning" />
+              <div class="advantages__subtitle">
+                После работы проводится уборка
+              </div>
+              <div class="advantages__descr">
+                Рабочее пространство убирается после окончания работ до пределов
+                разумной чистоты.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="consultation" id="consultation">
+      <div class="container">
+        <h2 class="title title_left">Получите бесплатную консультацию</h2>
+        <div class="consultation__descr">
+          Просто заполните форму заявки и мы перезвоним вам
+        </div>
+        <form id="consultation-form" class="feed-form" action="#">
+          <input name="name" required placeholder="Ваше имя" type="text" />
+          <input name="phone" required placeholder="Ваш телефон" />
+          <input name="email" required placeholder="Ваш email" type="email" />
+          <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="title">Услуги</h2>
+        <ol class="services__list">
+          <li class="services__link">Диагностика электропроводки</li>
+          <li class="services__link">Устранение обрыва, короткого замыкания</li>
+          <li class="services__link">
+            Установка электрических розеток и выключателей
+          </li>
+          <li class="services__link">
+            Установка компьютерных, телефонных, тв розеток
+          </li>
+          <li class="services__link">Установка потолочной люстры</li>
+          <li class="services__link">
+            Установка точечного, настенного светильника
+          </li>
+          <li class="services__link">Монтаж проходного выключателя</li>
+          <li class="services__link">Прокладка кабеля</li>
+          <li class="services__link">Устранение обрыва, короткого замыкания</li>
+          <li class="services__link">Штробление пола, потолка и стен</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="carousel" id="carousel">
+      <div class="container">
+        <div class="carousel__wrapper">
+          <h2 class="title">портфолио</h2>
+          <div class="carousel__inner">
+            <div>
+              <img src="img/carousel1.jpg" alt="" class="carousel__image" />
+            </div>
+            <div>
+              <img src="img/carousel2.jpg" alt="" class="carousel__image" />
+            </div>
+            <div>
+              <img src="img/carousel5.jpg" alt="" class="carousel__image" />
+            </div>
+            <div>
+              <img src="img/carousel7.jpg" alt="" class="carousel__image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="review" id="review">
+      <div class="container">
+        <h2 class="title">отзывы клиентов</h2>
+        <div
+          class="review__content animate__animated animate__fadeInUp wow"
+          data-wow-duration="2s"
+          data-wow-delay="1s"
+        >
+          <div class="review__item">
+            <img src="icons/client1.png" alt="review" />
+          </div>
+          <div class="review__wrapper">
+            <div class="review__name">Александр Ворочков</div>
+            <div class="review__subtitle">Установка розеток</div>
+            <div class="review__text">
+              Если нужна будет помощь с электрикой, то обратимся к Константину
+              снова)) Нужно было передвинуть и сделать новые розетки на кухне, а
+              также вывести провода для подсветки и индукционной плиты. Со всеми
+              задачами специалист справился отлично. Приехал, послушал наши
+              пожелания, ознакомился со схемой от дизайнера, где нужно
+              подсказал. Потом сам съездил в магазин и закупился необходимыми
+              материалами, приехал и все быстро и качественно сделал. Мы
+              довольны)
+            </div>
+          </div>
+        </div>
+        <div
+          class="review__content animate__animated animate__fadeInUp wow"
+          data-wow-duration="2s"
+          data-wow-delay="1s"
+        >
+          <div class="review__item">
+            <img src="icons/client2.png" alt="review" />
+          </div>
+          <div class="review__wrapper">
+            <div class="review__name">Татьяна Сёмочкин</div>
+            <div class="review__subtitle">Подключение уличного освещения</div>
+            <div class="review__text">
+              Ребят , специалист от бога 👍👍👍👍приехал вовремя , сразу все
+              посчитали , в этот же день все купил , привёз и все сделал !!!
+              Работа была не из легких 👆короче все кто хочет хорошего электрика
+              , рекомендую 👍
+            </div>
+          </div>
+        </div>
+        <div
+          class="review__content animate__animated animate__fadeInUp wow"
+          data-wow-duration="2s"
+          data-wow-delay="1s"
+        >
+          <div class="review__item">
+            <img src="icons/client3.png" alt="review" />
+          </div>
+          <div class="review__wrapper">
+            <div class="review__name">Никита Запольский</div>
+            <div class="review__subtitle">Установка щетка</div>
+            <div class="review__text">
+              Очень быстро и качественно выполнил работу. Хотели
+              проконсультироваться с мастером по вопросу починки другой
+              электрики в доме - сразу же выполнил и эти работы, ценник не
+              завышал, очень хороший специалист.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <!-- <div class="container"> -->
+      <div class="footer__wrapper">
+        <div>
+          <div class="footer__title">LightMan</div>
+          <div class="footer__subtitle">
+            Все права защищены &#169; BeVoD, 2023
+          </div>
+        </div>
+        <div>
+          <div class="footer__img">
+            <a href="#"><img src="icons/Logo.png" alt="Lightman" /></a>
+            <div class="footer__descr">Мы зажигаем свет</div>
+          </div>
+        </div>
+        <div>
+          <div class="footer__social">
+            <a href="" class="footer__social-item"
+              ><i class="fa-brands fa-vk"></i
+            ></a>
+            <a href="" class="footer__social-item"
+              ><i class="fab fa-twitter" aria-hidden="true"></i
+            ></a>
+            <a href="" class="footer__social-item"
+              ><i class="fab fa-linkedin" aria-hidden="true"></i
+            ></a>
+            <a href="" class="footer__social-item"
+              ><i class="fab fa-instagram" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="overlay">
+      <div class="modal" id="consultation1">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Просто заполните форму заявки</div>
+        <div class="modal__descr">и мы перезвоним вам</div>
+        <form class="feed-form feed-form_mt25" action="#">
+          <input name="name" placeholder="Ваше имя" type="text" />
+          <input name="phone" placeholder="Ваш телефон" />
+          <input name="email" placeholder="Ваш email" type="email" />
+          <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+        </form>
+      </div>
+
+      <!-- <div class="modal" id="order">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Ваш заказ:</div>
+        <div class="modal__descr">Пульсометр Polar FT1</div>
+        <form class="feed-form feed-form_mt25" action="#">
+          <input
+            name="name"
+            required
+            maxlength="5"
+            placeholder="Ваше имя"
+            type="text"
+          />
+          <input name="phone" required placeholder="Ваш телефон" />
+          <input name="email" required placeholder="Ваш email" type="email" />
+          <button class="button button_submit">Купить</button>
+        </form>
+      </div> -->
+
+      <div class="modal modal_mini" id="thanks">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+        <div class="modal__descr">Мы свяжемся с вами в ближайшее время!</div>
+      </div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script
+      src="https://kit.fontawesome.com/1f407ba613.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.js"></script>
     <script src="js/wow.min.js"></script>
+
+    <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

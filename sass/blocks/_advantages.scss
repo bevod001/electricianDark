@@ -1,0 +1,37 @@
+.advantages {
+    display: none;
+    min-height: 500px;
+    padding: 50px 0 50px 0;
+    background-image: repeating-linear-gradient(315deg, #fafafa, #fafafa 20px, #e0e0e0 20px, #e0e0e0 40px);
+    .title {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 900px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+    &__icon {
+        width: 268px;
+        text-align: center;
+
+        img {
+            width:  80px;
+        }
+    }
+    &__subtitle {
+        width: 217px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 20px;
+        font-weight: 700;
+    }
+    &__descr {
+        margin-top: 20px;
+    }
+}

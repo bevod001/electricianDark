@@ -3,8 +3,9 @@
   height: 50px;
 }
 .header__menu {
+  display: none;
   position: fixed;
-  padding-top: 17px;
+  padding-top: 13px;
   list-style-type: none;
   width: 100%;
   height: 50px;
@@ -47,8 +48,10 @@
   top: 54px;
   width: 100%;
   height: 157px;
-  background-color: rgba(40, 50, 60, 0.6);
-  border-top: #d3d606 solid;
+  border-top: none;
+}
+.header__contacts {
+  display: none;
 }
 .header__contacts__phone {
   color: #fff;
@@ -67,7 +70,7 @@
   align-items: center;
 }
 .header__logo {
-  display: block;
+  display: none;
   text-align: center;
 }
 .header__logo-ling {
