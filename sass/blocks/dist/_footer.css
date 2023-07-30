@@ -1,5 +1,5 @@
 .footer {
-  display: none;
+  display: block;
   background: url(../img/footer.jpg) center center/cover no-repeat;
   min-height: 300px;
   padding-top: 50px;
@@ -9,7 +9,7 @@
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   text-align: center;
 }
 .footer__img {
@@ -55,5 +55,5 @@
   width: 350px;
   display: flex;
   justify-content: space-around;
-  margin-top: 58px;
+  align-items: center;
 }

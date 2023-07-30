@@ -18,29 +18,34 @@
   <body>
     <header class="header" id="header">
       <nav class="header__menu">
-        <div class="container__fluid">
-          <div class="header__wrapper">
-            <ul class="header__list">
-              <li class="header__item">
-                <a href="#header" class="header__link">Главная</a>
-              </li>
-              <li class="header__item">
-                <a href="#consultation" class="header__link">консультация</a>
-              </li>
-              <li class="header__item">
-                <a href="#services" class="header__link">услуги</a>
-              </li>
-              <li class="header__item">
-                <a href="#carousel" class="header__link">портфолио</a>
-              </li>
-              <li class="header__item">
-                <a href="#review" class="header__link">отзывы</a>
-              </li>
-              <li class="header__item">
-                <a href="#footer" class="header__link">контакты</a>
-              </li>
-            </ul>
-          </div>
+        <div class="container">
+          <!-- <div class="header__wrapper"> -->
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#header" class="header__link">Главная</a>
+            </li>
+            <li class="header__item">
+              <a href="#consultation" class="header__link">консультация</a>
+            </li>
+            <li class="header__item">
+              <a href="#services" class="header__link">услуги</a>
+            </li>
+            <li class="header__item">
+              <a href="#carousel" class="header__link">портфолио</a>
+            </li>
+            <li class="header__item">
+              <a href="#review" class="header__link">отзывы</a>
+            </li>
+            <li class="header__item">
+              <a href="#footer" class="header__link">контакты</a>
+            </li>
+          </ul>
+          <!-- </div> -->
+        </div>
+        <div class="header__hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </nav>
       <div class="header__subheader">
@@ -183,27 +188,33 @@
       </div>
     </section>
 
-    <section class="carousel" id="carousel">
+    <div class="carousel" id="carousel">
       <div class="container">
         <div class="carousel__wrapper">
           <h2 class="title">портфолио</h2>
           <div class="carousel__inner">
             <div>
-              <img src="img/carousel1.jpg" alt="" class="carousel__image" />
+              <img src="img/carousel1.jpg" alt="watch" />
             </div>
             <div>
-              <img src="img/carousel2.jpg" alt="" class="carousel__image" />
+              <img src="img/carousel2.jpg" alt="watch" />
             </div>
             <div>
-              <img src="img/carousel5.jpg" alt="" class="carousel__image" />
+              <img src="img/carousel5.jpg" alt="watch" />
             </div>
             <div>
-              <img src="img/carousel7.jpg" alt="" class="carousel__image" />
+              <img src="img/carousel7.jpg" alt="watch" />
             </div>
           </div>
         </div>
+        <button type="button" class="prev">
+          <img src="icons/arrow.png" alt="prev" />
+        </button>
+        <button type="button" class="next">
+          <img src="icons/arrow.png" alt="next" />
+        </button>
       </div>
-    </section>
+    </div>
 
     <section class="review" id="review">
       <div class="container">
@@ -240,7 +251,7 @@
             <img src="icons/client2.png" alt="review" />
           </div>
           <div class="review__wrapper">
-            <div class="review__name">Татьяна Сёмочкин</div>
+            <div class="review__name">Татьяна Сёмочкина</div>
             <div class="review__subtitle">Подключение уличного освещения</div>
             <div class="review__text">
               Ребят , специалист от бога 👍👍👍👍приехал вовремя , сразу все
@@ -277,9 +288,6 @@
       <div class="footer__wrapper">
         <div>
           <div class="footer__title">LightMan</div>
-          <div class="footer__subtitle">
-            Все права защищены &#169; BeVoD, 2023
-          </div>
         </div>
         <div>
           <div class="footer__img">
@@ -304,10 +312,11 @@
           </div>
         </div>
       </div>
+      <div class="footer__subtitle">Все права защищены &#169; BeVoD, 2023</div>
     </footer>
 
     <div class="overlay">
-      <div class="modal" id="consultation1">
+      <div class="modal modal_form" id="consultation1">
         <div class="modal__close">&times;</div>
         <div class="modal__subtitle">Просто заполните форму заявки</div>
         <div class="modal__descr">и мы перезвоним вам</div>

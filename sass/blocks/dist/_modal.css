@@ -14,8 +14,19 @@
   transform: translate(-50%, -50%);
   width: 380px;
   min-height: 400px;
-  background-color: #fffbfb;
+  background-color: #d9dbc9;
   padding: 40px 40px 40px 40px;
+  z-index: 4;
+}
+.modal__form .feed-form {
+  z-index: 2;
+}
+.modal__form .feed-form input {
+  width: 273px;
+  margin: 5px auto;
+}
+.modal__form .feed-form .button_submit {
+  margin-top: 10px;
 }
 .modal__close {
   position: absolute;

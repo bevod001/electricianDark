@@ -1,5 +1,5 @@
 .services {
-  display: none;
+  display: block;
   min-height: 575px;
   background: url(../img/fone.png) center center/cover no-repeat;
   padding: 50px 0 50px 0;

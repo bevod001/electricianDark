@@ -1,6 +1,8 @@
-
+// * {
+//     border: 1px solid #f00; 
+// }
 body{
-    background-color: black;
+    // background-color: black;
 }
 
 .container {
@@ -31,3 +33,4 @@ body{
 @import 'blocks/review';
 @import 'blocks/footer';
 @import 'blocks/modal';
+@import 'media';

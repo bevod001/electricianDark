@@ -1,0 +1,66 @@
+.carousel {
+  display: block;
+  padding: 70px 0;
+  background: url(../img/carousel.jpg) center center/cover no-repeat;
+  border: solid 40px;
+  border-image: url(../../img/warning.png) 70 repeat;
+  border-right: none;
+  border-left: none;
+}
+.carousel__wrapper {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  text-align: center;
+  margin-right: -123px;
+}
+.carousel__image {
+  border-right: 5px #57575a solid;
+  padding-right: 15px;
+  border-bottom: 5px #57575a solid;
+  padding-bottom: 15px;
+}
+.carousel .title {
+  text-align: right;
+  text-transform: uppercase;
+}
+.carousel__inner {
+  position: relative;
+  width: 720px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.carousel__image {
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.carousel .slick-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 58px;
+  border: none;
+  background-color: #fff;
+  z-index: 1;
+}
+.carousel .slick-prev img {
+  width: 55px;
+  height: 80px;
+  transform: scale(-1, 1);
+}
+.carousel .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 594px;
+  border: none;
+  background-color: #fff;
+  z-index: 1;
+}
+.carousel .slick-next img {
+  width: 55px;
+  height: 80px;
+}

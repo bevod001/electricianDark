@@ -1,5 +1,5 @@
 .consultation {
-  display: none;
+  display: block;
   min-height: 680px;
   padding: 92px 0 92px 0;
   background: url("../img/forms.jpg") center center/cover no-repeat;

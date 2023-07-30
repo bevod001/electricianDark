@@ -49,24 +49,58 @@ window.onload = function () {
       footer.style.display = "none";
     }
   });
-}; //corousel
+};
 
+var slider = tns({
+  container: ".carousel__inner",
+  items: 1,
+  slideBy: "page",
+  autoplay: false,
+  controls: false,
+  speed: 2000,
+  responsive: {
+    1000: {
+      nav: true
+    }
+  }
+});
+
+document.querySelector(".prev").onclick = function () {
+  slider.goTo("prev");
+};
+
+document.querySelector(".next").onclick = function () {
+  slider.goTo("next");
+};
+
+var mediaQuery = window.matchMedia("(max-width: 767px)");
+
+function prevMediaQuery(mediaQuery) {
+  var element = document.querySelector(".prev");
+
+  if (mediaQuery.matches) {
+    element.style.display = "none";
+  } else {
+    element.style.display = "block";
+  }
+}
+
+function nextMediaQuery(mediaQuery) {
+  var element = document.querySelector(".next");
+
+  if (mediaQuery.matches) {
+    element.style.display = "none";
+  } else {
+    element.style.display = "block";
+  }
+}
+
+nextMediaQuery(mediaQuery);
+prevMediaQuery(mediaQuery);
+mediaQuery.addListener(prevMediaQuery);
+mediaQuery.addListener(nextMediaQuery); //corousel
 
 $(document).ready(function () {
-  $(".carousel__inner").slick({
-    dots: false,
-    infinite: true,
-    speed: 1500,
-    slidesToShow: 1,
-    adaptiveHeight: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    fade: true,
-    cssEase: "linear",
-    prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrow.png"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow.png"></button>'
-  }); //modal
-
   $("[data-modal=consultation]").on("click", function () {
     $(".overlay, #consultation1").fadeIn("slow");
   });
@@ -77,6 +111,22 @@ $(document).ready(function () {
     $(this).on("click", function () {
       $("#order .modal__descr").text($(".catalog-item__subtitle").eq(i).text());
       $(".overlay, #order").fadeIn("slow");
+    });
+  });
+}); //hamburger
+
+window.addEventListener("DOMContentLoaded", function () {
+  var menu = document.querySelectorAll(".header__list"),
+      headerList = document.querySelector(".header__list"),
+      hamburger = document.querySelector(".header__hamburger");
+  hamburger.addEventListener("click", function () {
+    hamburger.classList.toggle("header__hamburger_active");
+    headerList.classList.toggle("header__list_active");
+  });
+  menu.forEach(function (item) {
+    item.addEventListener("click", function () {
+      hamburger.classList.toggle("header__hamburger_active");
+      headerList.classList.toggle("header__list_active");
     });
   });
 });

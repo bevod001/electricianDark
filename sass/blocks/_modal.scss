@@ -14,9 +14,22 @@
     transform: translate(-50%, -50%); 
     width: 380px;
     min-height: 400px;
-    background-color: #fffbfb;
+    background-color: #d9dbc9;
     padding: 40px 40px 40px 40px;
-
+    z-index: 4;
+    &__form {
+        .feed-form {
+            z-index: 2;
+            input {
+                width: 273px;
+                margin: 5px auto;
+                
+            }
+            .button_submit {
+                margin-top: 10px;
+            }
+        }
+    }
     &__close {
         position: absolute;
         top: 0;
