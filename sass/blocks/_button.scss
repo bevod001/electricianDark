@@ -1,5 +1,5 @@
 .button {
-    display: block; 
+    display: block;
     position: relative;
     width: 168px;
     height: 40px;
@@ -17,8 +17,31 @@
     animation-iteration-count: infinite;
     z-index: 1;
     cursor: pointer;
+
     &_submit {
         width: 300px;
+        z-index: 0;
     }
-    
+
+    &__first {
+        display: block;
+        position: relative;
+        width: 224px;
+        height: 40px;
+        background-color: #d3d606;
+        border-radius: 5px;
+        border: none;
+        font-size: 12px;
+        line-height: 5px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: rgb(0, 0, 0);
+        // animation-name: heartbeat;
+        animation-duration: 1.5s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        z-index: 0;
+        cursor: pointer;
+    }
+
 }

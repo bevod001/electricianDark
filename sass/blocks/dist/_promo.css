@@ -2,13 +2,14 @@
   display: block;
   min-height: 900px;
   padding-bottom: 93px;
+  padding-top: 247px;
   background: url(../img/main.jpg) center center/cover no-repeat;
 }
 .promo__wrapper {
-  padding-top: 240px;
   width: 650px;
   display: flex;
   flex-direction: column;
+  margin-left: 156px;
 }
 .promo__header {
   color: white;

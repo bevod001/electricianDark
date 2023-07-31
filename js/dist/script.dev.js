@@ -98,7 +98,7 @@ function nextMediaQuery(mediaQuery) {
 nextMediaQuery(mediaQuery);
 prevMediaQuery(mediaQuery);
 mediaQuery.addListener(prevMediaQuery);
-mediaQuery.addListener(nextMediaQuery); //corousel
+mediaQuery.addListener(nextMediaQuery); //corausel
 
 $(document).ready(function () {
   $("[data-modal=consultation]").on("click", function () {
@@ -113,6 +113,7 @@ $(document).ready(function () {
       $(".overlay, #order").fadeIn("slow");
     });
   });
+  new WOW().init();
 }); //hamburger
 
 window.addEventListener("DOMContentLoaded", function () {

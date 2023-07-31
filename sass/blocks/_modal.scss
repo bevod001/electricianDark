@@ -16,13 +16,14 @@
     min-height: 400px;
     background-color: #d9dbc9;
     padding: 40px 40px 40px 40px;
-    z-index: 4;
+    z-index: 2;
     &__form {
         .feed-form {
             z-index: 2;
             input {
                 width: 273px;
                 margin: 5px auto;
+                z-index: 2
                 
             }
             .button_submit {
@@ -35,7 +36,7 @@
         top: 0;
         right: -40px;
         font-size: 41px;
-        color: yellow;
+        color: rgb(255, 0, 0);
         line-height: 21px;
         cursor: pointer;
     }

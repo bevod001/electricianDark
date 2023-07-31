@@ -106,7 +106,7 @@ nextMediaQuery(mediaQuery);
 prevMediaQuery(mediaQuery);
 mediaQuery.addListener(prevMediaQuery);
 mediaQuery.addListener(nextMediaQuery);
-//corousel
+//corausel
 
 $(document).ready(function () {
   $("[data-modal=consultation]").on("click", function () {
@@ -123,6 +123,7 @@ $(document).ready(function () {
       $(".overlay, #order").fadeIn("slow");
     });
   });
+  new WOW().init();
 });
 
 //hamburger

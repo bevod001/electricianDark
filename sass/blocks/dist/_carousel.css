@@ -12,6 +12,11 @@
   text-align: center;
   margin: 0 auto;
 }
+.carousel__wrapper-mini {
+  position: relative;
+  max-width: 950px;
+  margin: 0 auto;
+}
 .carousel .title {
   margin-bottom: 0;
   text-transform: uppercase;
@@ -60,7 +65,10 @@
   text-align: center;
   justify-content: center;
 }
-.carousel [data-nav="0"], .carousel [data-nav="1"], .carousel [data-nav="2"], .carousel [data-nav="3"] {
+.carousel [data-nav="0"],
+.carousel [data-nav="1"],
+.carousel [data-nav="2"],
+.carousel [data-nav="3"] {
   height: 20px;
   width: 50px;
   display: block;
@@ -68,11 +76,13 @@
   border-radius: 5px;
   background-color: #fff;
   transform: translateY(685px);
-  z-index: 1;
   cursor: pointer;
   margin-right: 5px;
 }
-.carousel [data-nav="0"]:hover, .carousel [data-nav="1"]:hover, .carousel [data-nav="2"]:hover, .carousel [data-nav="3"]:hover {
+.carousel [data-nav="0"]:hover,
+.carousel [data-nav="1"]:hover,
+.carousel [data-nav="2"]:hover,
+.carousel [data-nav="3"]:hover {
   box-shadow: 1px 1px 20px yellow;
   border: none;
 }

@@ -1,6 +1,7 @@
 // * {
 //     border: 1px solid #f00; 
 // }
+
 body{
     // background-color: black;
 }
@@ -9,7 +10,9 @@ body{
     position: relative;
     max-width: 950px;
     margin: 0 auto;
-
+    &__promo {
+        position: static;
+    }
     &__fluid {
         max-width: 1250px;
         margin: 0 auto;

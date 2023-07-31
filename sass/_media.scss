@@ -52,6 +52,8 @@
 
         &__wrapper {
             text-align: center;
+            margin: 0 auto;
+            padding-top: 0;
         }
 
         &__subheader {
@@ -159,22 +161,28 @@
 
 
     .promo {
+        &__header {
+            
+        }
+
         &__text {
-            width: 580px;
+            width: 568px;
         }
 
         &__wrapper {
-            width: auto;
-            padding-top: 560px;
+            width: 571px;
+            padding-top: 75px;
         }
 
         &__subheader {
             display: block;
-            font-size: 20px;
+            font-size: 17px;
         }
 
         &__icons {
-            flex-direction: column;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
             align-items: center;
             margin-top: 1px;
         }
@@ -193,7 +201,7 @@
             transform: translateY(-50%);
             // height: 9px;
             width: 26px;
-
+            
             span {
                 display: block;
                 height: 2px;
@@ -255,6 +263,11 @@
 
         &__wrapper-mini {
             flex-direction: column;
+            padding-bottom: 20px;
+            
+            .light {
+                display: none;
+            }
 
         }
 
@@ -412,20 +425,39 @@
     }
 
     .promo {
+        &__wrapper {
+            width: 329px;
+        }
+        &__icons {
+            display: flex;
+            flex-direction: column;
+        }
         &__text {
-            width: 448px;
+            width: auto;
+            line-height: normal;
+        }
+        &__subheader {
+            font-size: 15px;
         }
     }
 
     .services {
         padding-top: 65px;
     }
+    .modal {
+        &__close {
+            right: 2px;
+        }
+    }
 }
 
 @media (max-width: 446px) {
     .promo {
+        &__wrapper {
+            width: 317px;
+        }
         &__text {
-            width: 385px;
+            width: auto;
         }
     }
 
@@ -460,11 +492,13 @@
         &__wrapper {
             width: 310px;
         }
+
         .tns-outer {
             img {
                 width: 300px;
             }
         }
+
         [data-nav="0"],
         [data-nav="1"],
         [data-nav="2"],
@@ -478,12 +512,22 @@
             width: 310px;
         }
     }
+    .modal {
+        width: 308px;
+        .feed-form {
+            width: 230px;
+            .button_submit {
+                width: 230px;
+            }
+        }
+    }
 }
 
 @media (max-width: 320px) {
     .promo {
         &__text {
-            width: 311px;
+            // width: 311px;
+            width: auto;
         }
     }
 
@@ -505,6 +549,7 @@
 
         .tns-outer {
             margin-top: 0;
+
             img {
                 width: 200px;
             }
