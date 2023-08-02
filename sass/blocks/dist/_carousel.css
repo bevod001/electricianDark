@@ -51,42 +51,55 @@
 .carousel .tns-item img {
   display: block;
   margin: 0 auto;
+  height: auto;
+  width: 100%;
+  max-width: 1024px;
+  border: 5px solid #555457;
+  padding: 5px;
 }
 .carousel .tns-outer {
   position: relative;
   margin-top: 20px;
 }
-.carousel .tns-outer img {
-  width: 365px;
-  border-radius: 15px;
-}
 .carousel .tns-nav {
   display: flex;
   text-align: center;
   justify-content: center;
+  position: absolute;
+  left: 50%;
+  bottom: -6%;
+  transform: translateY(50%);
+  transform: translateX(-50%);
 }
 .carousel [data-nav="0"],
 .carousel [data-nav="1"],
 .carousel [data-nav="2"],
-.carousel [data-nav="3"] {
+.carousel [data-nav="3"],
+.carousel [data-nav="4"],
+.carousel [data-nav="5"],
+.carousel [data-nav="6"],
+.carousel [data-nav="7"] {
   height: 20px;
   width: 50px;
   display: block;
   border: 2px solid #d0d0d0;
   border-radius: 5px;
   background-color: #fff;
-  transform: translateY(685px);
   cursor: pointer;
   margin-right: 5px;
 }
 .carousel [data-nav="0"]:hover,
 .carousel [data-nav="1"]:hover,
 .carousel [data-nav="2"]:hover,
-.carousel [data-nav="3"]:hover {
-  box-shadow: 1px 1px 20px yellow;
+.carousel [data-nav="3"]:hover,
+.carousel [data-nav="4"]:hover,
+.carousel [data-nav="5"]:hover,
+.carousel [data-nav="6"]:hover,
+.carousel [data-nav="7"]:hover {
+  box-shadow: 1px 1px 20px #30302f;
   border: none;
 }
 .carousel .tns-nav-active {
-  background-color: yellow;
+  background-color: black;
   border-radius: 5px;
 }

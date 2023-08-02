@@ -49,7 +49,8 @@ window.onload = function () {
       footer.style.display = "none";
     }
   });
-};
+}; //corousel
+
 
 var slider = tns({
   container: ".carousel__inner",

@@ -2,9 +2,6 @@
 //     border: 1px solid #f00; 
 // }
 
-body{
-    // background-color: black;
-}
 
 .container {
     position: relative;
@@ -16,6 +13,12 @@ body{
     &__fluid {
         max-width: 1250px;
         margin: 0 auto;
+    }
+    &__carousel {
+        position: relative;
+        max-width: 1500px;
+        margin: 0 auto;
+
     }
 }
 

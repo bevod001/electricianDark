@@ -63,6 +63,7 @@ window.onload = function () {
   });
 };
 
+//corousel
 var slider = tns({
   container: ".carousel__inner",
   items: 1,

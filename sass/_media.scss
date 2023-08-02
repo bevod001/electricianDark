@@ -1,3 +1,5 @@
+@media (max-width: 1400px) {}
+
 @media (max-width: 1200px) {
     .promo {
         min-height: 870px;
@@ -78,6 +80,11 @@
     }
 
     .carousel {
+        .tns-nav {
+            bottom: -8%;
+        }
+
+
         .prev {
             left: 143px;
         }
@@ -161,9 +168,7 @@
 
 
     .promo {
-        &__header {
-            
-        }
+        &__header {}
 
         &__text {
             width: 568px;
@@ -201,7 +206,7 @@
             transform: translateY(-50%);
             // height: 9px;
             width: 26px;
-            
+
             span {
                 display: block;
                 height: 2px;
@@ -264,7 +269,7 @@
         &__wrapper-mini {
             flex-direction: column;
             padding-bottom: 20px;
-            
+
             .light {
                 display: none;
             }
@@ -318,13 +323,13 @@
     }
 
     .carousel {
-        &__wrapper {
-            width: 578px;
+        .tns-nav {
+            bottom: -10%;
         }
 
-        &__image {
-            width: 318px;
-        }
+        // &__image {
+        //     width: 318px;
+        // }
     }
 
     .review {
@@ -396,9 +401,10 @@
 
 @media (max-width: 575px) {
     .carousel {
-        &__wrapper {
-            width: 417px;
+        .tns-nav {
+            bottom: -14%;
         }
+
     }
 
     .review {
@@ -428,14 +434,17 @@
         &__wrapper {
             width: 329px;
         }
+
         &__icons {
             display: flex;
             flex-direction: column;
         }
+
         &__text {
             width: auto;
             line-height: normal;
         }
+
         &__subheader {
             font-size: 15px;
         }
@@ -444,6 +453,7 @@
     .services {
         padding-top: 65px;
     }
+
     .modal {
         &__close {
             right: 2px;
@@ -456,6 +466,7 @@
         &__wrapper {
             width: 317px;
         }
+
         &__text {
             width: auto;
         }
@@ -489,22 +500,12 @@
     }
 
     .carousel {
-        &__wrapper {
-            width: 310px;
-        }
+        &__wrapper {}
 
         .tns-outer {
-            img {
-                width: 300px;
-            }
+            img {}
         }
 
-        [data-nav="0"],
-        [data-nav="1"],
-        [data-nav="2"],
-        [data-nav="3"] {
-            transform: translateY(566px);
-        }
     }
 
     .review {
@@ -512,10 +513,13 @@
             width: 310px;
         }
     }
+
     .modal {
         width: 308px;
+
         .feed-form {
             width: 230px;
+
             .button_submit {
                 width: 230px;
             }
@@ -526,7 +530,7 @@
 @media (max-width: 320px) {
     .promo {
         &__text {
-            // width: 311px;
+
             width: auto;
         }
     }
@@ -550,17 +554,8 @@
         .tns-outer {
             margin-top: 0;
 
-            img {
-                width: 200px;
-            }
         }
 
-        [data-nav="0"],
-        [data-nav="1"],
-        [data-nav="2"],
-        [data-nav="3"] {
-            transform: translateY(400px);
-        }
     }
 
     .review {
