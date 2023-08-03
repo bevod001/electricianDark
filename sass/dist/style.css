@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container {
   position: relative;
   max-width: 950px;
@@ -14,6 +15,93 @@
   position: relative;
   max-width: 1500px;
   margin: 0 auto;
+}
+
+.lamp {
+  @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+  display: none;
+}
+.lamp .lampochka {
+  width: 462px;
+  height: 512px;
+  position: relative;
+}
+.lamp img {
+  margin-top: -50px;
+  height: 450px;
+  width: 100%;
+  position: absolute;
+}
+.lamp img#bulb-on {
+  opacity: 0;
+  animation: glow 3s linear infinite;
+}
+@keyframes glow {
+  0% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  74% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  84% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.lamp .nuladnik {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.lamp .nuladnik span {
+  height: 52px;
+  width: 194px;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  background: none;
+  color: #f3f0f0;
+  text-transform: uppercase;
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid #c1c1c1;
+  border-radius: 100px;
+  transition: all 0.3s ease;
+}
+.lamp .nuladnik span:hover {
+  background: #fff;
+  color: #111;
+}
+.lamp #nuladnik:checked ~ .nuladnik span {
+  background: #fff;
+  color: #111;
+}
+.lamp .nuladnik span:before {
+  content: "выключить";
+}
+.lamp #nuladnik:checked ~ img#bulb-on {
+  animation: none;
+}
+.lamp #nuladnik:checked ~ .nuladnik span:before {
+  content: "включить";
+}
+.lamp .lampochka input {
+  display: none;
 }
 
 .header {
@@ -1081,6 +1169,10 @@
     margin-top: 20px;
     font-size: 17px;
     text-align: center;
+  }
+
+  .carousel .tns-nav button {
+    width: 37px;
   }
 
   .review__wrapper {

@@ -500,10 +500,11 @@
     }
 
     .carousel {
-        &__wrapper {}
 
-        .tns-outer {
-            img {}
+        .tns-nav {
+            button {
+                width: 37px;
+            }
         }
 
     }

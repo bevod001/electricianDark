@@ -14,6 +14,9 @@ window.onload = function () {
   let carousel = document.querySelector(".carousel");
   let review = document.querySelector(".review");
   let footer = document.querySelector(".footer");
+  let lamp = document.querySelector(".lamp");
+  let lampochka = document.querySelector(".lampochka");
+  let headerWrapperMini = document.querySelector('.header__wrapper-mini')
   btn.addEventListener("click", () => {
     if (
       promo.style.display === "none" &&
@@ -29,7 +32,8 @@ window.onload = function () {
       services.style.display === "none" &&
       carousel.style.display === "none" &&
       review.style.display === "none" &&
-      footer.style.display === "none"
+      footer.style.display === "none" &&
+      lamp.style.display === "block"
     ) {
       promo.style.display = "block";
       body.style.background = "none";
@@ -44,6 +48,7 @@ window.onload = function () {
       carousel.style.display = "block";
       review.style.display = "block";
       footer.style.display = "block";
+      lamp.style.display = "none";
     } else {
       promo.style.display = "none";
       body.style.background = "black";
@@ -59,6 +64,10 @@ window.onload = function () {
       carousel.style.display = "none";
       review.style.display = "none";
       footer.style.display = "none";
+      lamp.style.display = "block";
+      lampochka.style.top = "235" + "px";
+      lampochka.style.margin = "0 auto";
+      headerWrapperMini.style.justifyContent = "space-around";
     }
   });
 };
@@ -131,8 +140,8 @@ $(document).ready(function () {
 
 window.addEventListener("DOMContentLoaded", () => {
   const menu = document.querySelectorAll(".header__list"),
-  headerList = document.querySelector(".header__list"),
-  hamburger = document.querySelector(".header__hamburger");
+    headerList = document.querySelector(".header__list"),
+    hamburger = document.querySelector(".header__hamburger");
 
   hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("header__hamburger_active");

@@ -357,6 +357,10 @@
     text-align: center;
   }
 
+  .carousel .tns-nav button {
+    width: 37px;
+  }
+
   .review__wrapper {
     width: 310px;
   }

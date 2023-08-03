@@ -16,9 +16,12 @@ window.onload = function () {
   var carousel = document.querySelector(".carousel");
   var review = document.querySelector(".review");
   var footer = document.querySelector(".footer");
+  var lamp = document.querySelector(".lamp");
+  var lampochka = document.querySelector(".lampochka");
+  var headerWrapperMini = document.querySelector('.header__wrapper-mini');
   btn.addEventListener("click", function () {
     if (promo.style.display === "none" && // header.style.display === "none" &&
-    body.style.background === "black" && headerMenu.style.display === "none" && headerSubheader.style.backgroundColor === "black" && headerLogo.style.display === "none" && headerContacts.style.display === "none" && headerSubheader.style.borderTop === "none" && advantages.style.display === "none" && consultation.style.display === "none" && services.style.display === "none" && carousel.style.display === "none" && review.style.display === "none" && footer.style.display === "none") {
+    body.style.background === "black" && headerMenu.style.display === "none" && headerSubheader.style.backgroundColor === "black" && headerLogo.style.display === "none" && headerContacts.style.display === "none" && headerSubheader.style.borderTop === "none" && advantages.style.display === "none" && consultation.style.display === "none" && services.style.display === "none" && carousel.style.display === "none" && review.style.display === "none" && footer.style.display === "none" && lamp.style.display === "block") {
       promo.style.display = "block";
       body.style.background = "none";
       headerMenu.style.display = "block";
@@ -32,6 +35,7 @@ window.onload = function () {
       carousel.style.display = "block";
       review.style.display = "block";
       footer.style.display = "block";
+      lamp.style.display = "none";
     } else {
       promo.style.display = "none";
       body.style.background = "black";
@@ -47,6 +51,10 @@ window.onload = function () {
       carousel.style.display = "none";
       review.style.display = "none";
       footer.style.display = "none";
+      lamp.style.display = "block";
+      lampochka.style.top = "235" + "px";
+      lampochka.style.margin = "0 auto";
+      headerWrapperMini.style.justifyContent = "space-around";
     }
   });
 }; //corousel
