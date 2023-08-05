@@ -109,6 +109,130 @@
   display: none;
 }
 
+.bod {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #222;
+}
+.bod.on {
+  background: radial-gradient(#555, #111);
+}
+
+.bulb {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: #444;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.glass.on .bulb {
+  background: #fff;
+  box-shadow: 0 0 50px #fff, 0 0 250px #fff, 0 0 150px #fff, 0 0 200px #fff, 0 0 250px #fff, 0 0 300px #fff, 0 0 350px #fff;
+}
+
+.bulb::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 22.5px;
+  width: 35px;
+  height: 80ex;
+  background: #444;
+  border-top: 30px solid #000;
+  border-radius: 10px;
+}
+
+.glass.on .bulb::before {
+  background: #fff;
+}
+.glass.on .bulb::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50, -50%);
+  width: 120px;
+  height: 120px;
+  background: #fff;
+  border-radius: 50%;
+  filter: blur(40px);
+}
+
+.bulb span:nth-child(1) {
+  position: absolute;
+  top: -16px;
+  left: -4px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  transform: rotate(342deg);
+  border-bottom-right-radius: 40px;
+  box-shadow: 20px 20px 0 10px #444;
+}
+
+.glass.on .bulb span:nth-child(1) {
+  box-shadow: 20px 20px 0 10px #fff;
+}
+
+.bulb span:nth-child(2) {
+  position: absolute;
+  top: -16px;
+  left: -4px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  transform: rotate(17deg);
+  border-bottom-right-radius: 40px;
+  box-shadow: -20px 20px 0 10px #444;
+}
+
+.glass.on .bulb span:nth-child(2) {
+  box-shadow: -20px 20px 0 10px #fff;
+}
+
+.wire {
+  position: absolute;
+  left: calc(50%-2px);
+  bottom: 50%;
+  width: 4px;
+  height: 60vh;
+  background: #000;
+  z-index: 1;
+}
+
+.switch {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(#eee, #ccc, #eee);
+  border: 3px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.switch .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background: linear-gradient(#fff, #fff);
+  border-radius: 4px;
+}
+
+.on .switch .btn::before {
+  top: 15%;
+}
+
 .header {
   position: relative;
   height: 50px;
@@ -265,77 +389,6 @@
   display: block;
   width: 165px;
   margin-top: 5px;
-}
-
-.light {
-  position: relative;
-}
-.light__descr {
-  color: white;
-  text-align: center;
-  font-size: 20px;
-  margin-top: 20px;
-}
-.light .vesametun {
-  position: absolute;
-  font-size: 14px;
-  right: 6px;
-  top: 5px;
-  width: 5em;
-  height: 8em;
-  margin: 0;
-  filter: opacity(0);
-  cursor: pointer;
-  z-index: 2;
-}
-.light .vesametun ~ .donetugo {
-  width: 5em;
-  height: 8em;
-  background: linear-gradient(#bbbec1, #fffefe);
-  border-radius: 1.2em;
-  box-shadow: inset 0 -0.2em 0.4em rgba(197, 193, 193, 0.75), inset 0 -0.8em 0 0.1em rgba(169, 166, 166, 0.85), 0 0 0 0.1em rgba(105, 102, 102, 0.8), 0 0.6em 0.6em rgba(31, 30, 30, 0.3), 0 0 0 0.4em #caced0;
-}
-.light .vesametun ~ .donetugo::before,
-.light .vesametun ~ .donetugo::after {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  font-size: 1.4em;
-  font-family: sans-serif;
-}
-.light .vesametun ~ .donetugo::before {
-  content: "|";
-  bottom: 3em;
-  color: rgba(0, 0, 0, 0.5);
-  text-shadow: 0 0.1em 0 rgba(255, 255, 255, 0.8);
-}
-.light .vesametun ~ .donetugo::after {
-  content: "O";
-  top: 0.6em;
-  color: rgba(0, 0, 0, 0.45);
-  text-shadow: 0 0.1em 0 rgba(255, 255, 255, 0.4);
-}
-.light .vesametun:checked ~ .donetugo {
-  background: linear-gradient(#87898c, #f5f2f2);
-  box-shadow: inset 0 0.2em 0.4em rgba(197, 192, 192, 0.75), inset 0 0.8em 0 0.1em rgba(236, 231, 231, 0.77), 0 0 0 0.1em rgba(103, 101, 101, 0.8), 0 -0.2em 0.2em rgba(27, 26, 26, 0.18), 0 0 0 0.4em #d0d0d0;
-}
-.light .vesametun:checked ~ .donetugo::before {
-  bottom: 2.3em;
-  text-shadow: 0 0.1em 0 rgba(255, 255, 255, 0.5);
-}
-.light .vesametun:checked ~ .donetugo::after {
-  top: 1.2em;
-  text-shadow: 0 0.1em 0 rgba(255, 255, 255, 0.15);
-}
-.light .vesametun ~ .branpodes {
-  width: 100vw;
-  height: 100vh;
-  background-color: #0a0a16;
-  z-index: 1;
-  filter: opacity(0.7);
-}
-.light .vesametun:checked ~ .branpodes {
-  filter: opacity(0);
 }
 
 .button {
@@ -960,9 +1013,6 @@
 @media (max-width: 767px) {
   .promo__text {
     width: 568px;
-  }
-  .promo__descr {
-    width: 111px;
   }
   .promo__wrapper {
     width: 571px;

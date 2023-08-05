@@ -1,4 +1,11 @@
-@media (max-width: 1400px) {}
+@media (max-width: 1400px) {
+    .review {
+        .container__review {
+            max-width: 1110px;
+        }
+    }
+
+}
 
 @media (max-width: 1200px) {
     .promo {
@@ -37,6 +44,12 @@
 
         &__subtitle {
             margin-top: 38px;
+        }
+    }
+
+    .review {
+        .container__review {
+            max-width: 900px;
         }
     }
 }
@@ -109,11 +122,21 @@
     }
 
     .review {
+
         &__content {
             &:nth-child(3) {
                 margin-top: 32px;
                 margin-bottom: 38px;
             }
+        }
+
+        &__wrapper-max {
+            border: none;
+        }
+
+        .container__review {
+            max-width: 950px;
+            padding: 0;
         }
 
         &__item {
@@ -173,6 +196,9 @@
         &__text {
             width: 568px;
         }
+        &__descr {
+            width: 111px;
+        }
 
         &__wrapper {
             width: 571px;
@@ -182,6 +208,7 @@
         &__subheader {
             display: block;
             font-size: 17px;
+
         }
 
         &__icons {
@@ -198,6 +225,10 @@
     }
 
     .header {
+        &__subheader {
+            height: 181px;
+        }
+
         &__hamburger {
             display: block;
             position: absolute;
@@ -400,7 +431,7 @@
 }
 
 @media (max-width: 575px) {
-    .carousel {
+    .carousel { 
         .tns-nav {
             bottom: -14%;
         }
@@ -410,6 +441,9 @@
     .review {
         &__wrapper {
             width: 417px;
+        }
+        &__item {
+            margin:0 5px
         }
     }
 
@@ -502,6 +536,8 @@
     .carousel {
 
         .tns-nav {
+            bottom: -20%;
+
             button {
                 width: 37px;
             }
@@ -550,7 +586,7 @@
     }
 
     .carousel {
-        padding: 49px 0;
+        padding-bottom: 62px;
 
         .tns-outer {
             margin-top: 0;

@@ -19,7 +19,12 @@
   margin-top: 70px;
 }
 .review__wrapper {
-  width: 660px;
+  width: auto;
+}
+.review__wrapper-max {
+  border-left: 2px dotted black;
+  border-right: 2px dotted black;
+  padding: 0 140px;
 }
 .review__name {
   font-size: 18px;

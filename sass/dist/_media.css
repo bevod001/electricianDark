@@ -1,3 +1,8 @@
+@media (max-width: 1400px) {
+  .review .container__review {
+    max-width: 1110px;
+  }
+}
 @media (max-width: 1200px) {
   .promo {
     min-height: 870px;
@@ -26,6 +31,10 @@
   }
   .footer__subtitle {
     margin-top: 38px;
+  }
+
+  .review .container__review {
+    max-width: 900px;
   }
 }
 @media (max-width: 991px) {
@@ -82,6 +91,13 @@
     margin-top: 32px;
     margin-bottom: 38px;
   }
+  .review__wrapper-max {
+    border: none;
+  }
+  .review .container__review {
+    max-width: 950px;
+    padding: 0;
+  }
   .review__item {
     margin-right: 22px;
   }
@@ -119,6 +135,9 @@
   .promo__text {
     width: 568px;
   }
+  .promo__descr {
+    width: 111px;
+  }
   .promo__wrapper {
     width: 571px;
     padding-top: 75px;
@@ -138,6 +157,9 @@
     margin-top: 16px;
   }
 
+  .header__subheader {
+    height: 181px;
+  }
   .header__hamburger {
     display: block;
     position: absolute;
@@ -292,6 +314,9 @@
   .review__wrapper {
     width: 417px;
   }
+  .review__item {
+    margin: 0 5px;
+  }
 
   .advantages__icons {
     margin: 0 auto;
@@ -357,6 +382,9 @@
     text-align: center;
   }
 
+  .carousel .tns-nav {
+    bottom: -20%;
+  }
   .carousel .tns-nav button {
     width: 37px;
   }
@@ -392,7 +420,7 @@
   }
 
   .carousel {
-    padding: 49px 0;
+    padding-bottom: 62px;
   }
   .carousel .tns-outer {
     margin-top: 0;

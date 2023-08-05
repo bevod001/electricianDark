@@ -20,16 +20,18 @@
 .button_submit {
   width: 300px;
   z-index: 0;
+  height: 50px;
+  font-size: 16px;
 }
 .button__first {
   display: block;
   position: relative;
   width: 224px;
-  height: 40px;
+  height: 50px;
   background-color: #d3d606;
   border-radius: 5px;
   border: none;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 5px;
   font-weight: 500;
   text-transform: uppercase;

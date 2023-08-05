@@ -8,7 +8,7 @@
     &__menu {
         display: block; //none
         position: fixed;
-        padding-top: 19px;
+        padding-top: 13px;
         list-style-type: none;
         width: 100%;
         height: 50px;
@@ -45,7 +45,7 @@
     &__link {
         color: #fff;
         text-decoration: none;
-        font-size: 13px;
+        font-size: 15px;
         text-transform: uppercase;
         border-right: rgb(128, 107, 107) solid;
         border-bottom: rgb(128, 107, 107) solid;
@@ -61,7 +61,8 @@
         width: 100%;
         height: 157px;
         background-color: rgba(40, 50, 60, 0.6);
-        border-top: none;
+        border-top: yellow 2px solid;
+        border-bottom: yellow 2px solid;
     }
 
     &__contacts {

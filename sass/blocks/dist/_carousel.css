@@ -1,7 +1,7 @@
 .carousel {
   display: block;
   padding-top: 30px;
-  padding-bottom: 50px;
+  padding-bottom: 90px;
   background: url(../img/1carousel.jpg) center center/cover no-repeat;
   border: solid 40px;
   border-image: url(../img/warning.png) 70 repeat;
