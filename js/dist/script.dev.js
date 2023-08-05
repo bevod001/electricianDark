@@ -2,60 +2,10 @@
 
 window.onload = function () {
   //Кнопка включения
-  var btn = document.querySelector(".light .vesametun"); // let btnShadow = document.querySelector(".light .donetugo");
-
-  var headerSubheader = document.querySelector(".header__subheader");
-  var promo = document.querySelector(".promo");
-  var headerMenu = document.querySelector(".header__menu");
-  var body = document.querySelector("body");
-  var headerLogo = document.querySelector(".header__logo");
-  var headerContacts = document.querySelector(".header__contacts");
-  var advantages = document.querySelector(".advantages");
-  var consultation = document.querySelector(".consultation");
-  var services = document.querySelector(".services");
-  var carousel = document.querySelector(".carousel");
-  var review = document.querySelector(".review");
-  var footer = document.querySelector(".footer");
-  var lamp = document.querySelector(".lamp");
-  var lampochka = document.querySelector(".lampochka");
-  var headerWrapperMini = document.querySelector('.header__wrapper-mini');
+  var btn = document.querySelector(".light .vesametun");
+  var promo = document.querySelector('.promo');
   btn.addEventListener("click", function () {
-    if (promo.style.display === "none" && // header.style.display === "none" &&
-    body.style.background === "black" && headerMenu.style.display === "none" && headerSubheader.style.backgroundColor === "black" && headerLogo.style.display === "none" && headerContacts.style.display === "none" && headerSubheader.style.borderTop === "none" && advantages.style.display === "none" && consultation.style.display === "none" && services.style.display === "none" && carousel.style.display === "none" && review.style.display === "none" && footer.style.display === "none" && lamp.style.display === "block") {
-      promo.style.display = "block";
-      body.style.background = "none";
-      headerMenu.style.display = "block";
-      headerSubheader.style.backgroundColor = "rgba(40, 50, 60, .6)";
-      headerLogo.style.display = "block";
-      headerContacts.style.display = "block";
-      headerSubheader.style.borderTop = "#d3d606 solid";
-      advantages.style.display = "block";
-      consultation.style.display = "block";
-      services.style.display = "block";
-      carousel.style.display = "block";
-      review.style.display = "block";
-      footer.style.display = "block";
-      lamp.style.display = "none";
-    } else {
-      promo.style.display = "none";
-      body.style.background = "black";
-      body.style.height = "950px";
-      headerMenu.style.display = "none";
-      headerSubheader.style.backgroundColor = "black";
-      headerLogo.style.display = "none";
-      headerContacts.style.display = "none";
-      headerSubheader.style.borderTop = "none";
-      advantages.style.display = "none";
-      consultation.style.display = "none";
-      services.style.display = "none";
-      carousel.style.display = "none";
-      review.style.display = "none";
-      footer.style.display = "none";
-      lamp.style.display = "block";
-      lampochka.style.top = "235" + "px";
-      lampochka.style.margin = "0 auto";
-      headerWrapperMini.style.justifyContent = "space-around";
-    }
+    promo.classList.toggle('promo_active');
   });
 }; //corousel
 

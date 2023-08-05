@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .container {
   position: relative;
   max-width: 950px;
@@ -20,93 +19,6 @@
   position: relative;
   max-width: 1300px;
   margin: 0 auto;
-}
-
-.lamp {
-  @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
-  display: none;
-}
-.lamp .lampochka {
-  width: 462px;
-  height: 512px;
-  position: relative;
-}
-.lamp img {
-  margin-top: -50px;
-  height: 450px;
-  width: 100%;
-  position: absolute;
-}
-.lamp img#bulb-on {
-  opacity: 0;
-  animation: glow 3s linear infinite;
-}
-@keyframes glow {
-  0% {
-    opacity: 1;
-  }
-  5% {
-    opacity: 1;
-  }
-  70% {
-    opacity: 1;
-  }
-  74% {
-    opacity: 0;
-  }
-  80% {
-    opacity: 1;
-  }
-  84% {
-    opacity: 0;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.lamp .nuladnik {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.lamp .nuladnik span {
-  height: 52px;
-  width: 194px;
-  display: block;
-  text-align: center;
-  line-height: 50px;
-  background: none;
-  color: #f3f0f0;
-  text-transform: uppercase;
-  font-size: 20px;
-  cursor: pointer;
-  border: 2px solid #c1c1c1;
-  border-radius: 100px;
-  transition: all 0.3s ease;
-}
-.lamp .nuladnik span:hover {
-  background: #fff;
-  color: #111;
-}
-.lamp #nuladnik:checked ~ .nuladnik span {
-  background: #fff;
-  color: #111;
-}
-.lamp .nuladnik span:before {
-  content: "выключить";
-}
-.lamp #nuladnik:checked ~ img#bulb-on {
-  animation: none;
-}
-.lamp #nuladnik:checked ~ .nuladnik span:before {
-  content: "включить";
-}
-.lamp .lampochka input {
-  display: none;
 }
 
 .header {
@@ -215,7 +127,10 @@
   min-height: 900px;
   padding-bottom: 93px;
   padding-top: 247px;
-  background: url(../img/main.jpg) center center/cover no-repeat;
+  background: url(../img/promo.jpeg) center center/cover no-repeat;
+}
+.promo_active {
+  background: url(../img/promo1.jpeg) center center/cover no-repeat;
 }
 .promo__wrapper {
   width: 650px;
@@ -304,13 +219,13 @@
   font-family: sans-serif;
 }
 .light .vesametun ~ .donetugo::before {
-  content: "|";
-  bottom: 3em;
+  content: "O";
+  bottom: 3.2em;
   color: rgba(0, 0, 0, 0.5);
   text-shadow: 0 0.1em 0 rgba(255, 255, 255, 0.8);
 }
 .light .vesametun ~ .donetugo::after {
-  content: "O";
+  content: "|";
   top: 0.6em;
   color: rgba(0, 0, 0, 0.45);
   text-shadow: 0 0.1em 0 rgba(255, 255, 255, 0.4);

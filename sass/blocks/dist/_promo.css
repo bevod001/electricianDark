@@ -3,7 +3,10 @@
   min-height: 900px;
   padding-bottom: 93px;
   padding-top: 247px;
-  background: url(../img/main.jpg) center center/cover no-repeat;
+  background: url(../img/promo.jpeg) center center/cover no-repeat;
+}
+.promo_active {
+  background: url(../img/promo1.jpeg) center center/cover no-repeat;
 }
 .promo__wrapper {
   width: 650px;

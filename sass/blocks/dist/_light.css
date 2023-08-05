@@ -35,13 +35,13 @@
   font-family: sans-serif;
 }
 .light .vesametun ~ .donetugo::before {
-  content: "|";
-  bottom: 3em;
+  content: "O";
+  bottom: 3.2em;
   color: rgba(0, 0, 0, 0.5);
   text-shadow: 0 0.1em 0 rgba(255, 255, 255, 0.8);
 }
 .light .vesametun ~ .donetugo::after {
-  content: "O";
+  content: "|";
   top: 0.6em;
   color: rgba(0, 0, 0, 0.45);
   text-shadow: 0 0.1em 0 rgba(255, 255, 255, 0.4);

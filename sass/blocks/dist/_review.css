@@ -1,6 +1,7 @@
 .review {
   display: block;
   padding-bottom: 71px;
+  background-color: #c9c1c1;
 }
 .review .title {
   text-transform: uppercase;
